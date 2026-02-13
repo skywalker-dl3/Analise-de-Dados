@@ -1,4 +1,6 @@
 import fastf1
+import matplotlib
+matplotlib.use('Agg')
 from fastf1 import plotting
 import matplotlib.pyplot as plt
 
@@ -29,4 +31,5 @@ plt.legend()
 plt.grid(True)
 
 print("Abrindo o gráfico...")
-plt.show()
+plt.savefig("grafico_bahrain_2023", dpi = 300)
+print("Imagem salva!")
